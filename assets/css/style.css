@@ -2,6 +2,7 @@
   #style.css
 \*-----------------------------------*/
 
+
 /**
  * copyright 2023 codewithsadee
  */
@@ -271,6 +272,13 @@ font-variation-settings:
 }
 .img-holder {
   aspect-ratio: var(--width) / var(--height);
+  background-color: var(--neutral-80);
+  overflow: hidden;
+}
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover ;
 }
 
 
@@ -333,6 +341,39 @@ color: var(--neutral-100);
 .icon-btn:where(:hover , :focus-visible) {
   background-color: var(--neutral-90);
 }
+
+
+/* *
+* badge
+*/
+.badge {
+  height: 32px;
+  max-width: max-content;
+  display: grid;
+  place-items: center;
+  padding-inline: 16px;
+  background-color: var(--secondary-100);
+  border-radius: var(--radius-small);
+  box-shadow: var(--shadow-3);
+}
+
+/* *CARD
+*
+*/
+
+.card {
+  border-radius: var(--radius-large);
+  overflow: hidden;
+  box-shadow: var(--shadow-2);
+  transition: var(--transition-duration-quick) var(--transition-easing-quick);
+}
+
+.card:where(:hover,:focus-within ) {
+  box-shadow:var(--shadow-2);
+
+}
+
+
 
 
 /*-----------------------------------*\
